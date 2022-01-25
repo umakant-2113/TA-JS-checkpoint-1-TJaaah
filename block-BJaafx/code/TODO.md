@@ -69,9 +69,12 @@ function check(num) {
   return num;
 }
 
-check(10); // output
+check(10); // output  
+"Bigger than 5"
 check(1); // output
+"smaller than 5"
 check(5); // output
+5 not match in any condition .
 ```
 
 7. What will be the output of the following code given below? Explain the reason?
@@ -84,8 +87,11 @@ function getOutput(name) {
 }
 
 getOutput("Arya"); // what will be the output
+"you are arya "
 getOutput("John"); // what will be the output
+"you are john " 
 getOutput(); // what will be the output
+it is return this value that we give  "raj"
 ```
 
 8. What will be the output of the following code given below? Explain the reason?
@@ -98,10 +104,29 @@ function getOutput(name) {
 }
 
 getOutput("Arya"); // what will be the output
+"you are arya " this is output of console and function returns  "who are you"
 getOutput("John"); // what will be the output
+"you are John" this is output of console and function returns  "who are you"
 getOutput(); // what will be the output
+it is return this value that we give  "raj"
 ```
 
 9. Can a function have multiple return statement? Give one example if possible and explain the reason.
 
+A function can have multiple return statements but only one of them will be executed because once a return statement is executed, the program control moves back to the caller function skipping the remaining statements of the current function.
+
+function check(num) {
+  if (num > 5) {
+    return "Bigger than 5";
+  }
+
+  if (num < 5) {
+    return "Smaller than 5";
+  }
+
+  return num;
+}
+check(5);
 10. What is the difference between `for` loop and `while` loop. What are the different place you can use them? Explain with example.
+
+The difference between for loop and while loop is that in for loop the number of iterations to be done is already known and is used to obtain a certain result whereas in while loop the command runs until a certain condition is reached and the statement is proved to be false
